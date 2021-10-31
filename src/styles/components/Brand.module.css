@@ -1,0 +1,18 @@
+.container {
+  padding: 0.5rem;
+  font-size: 3rem;
+
+  font-weight: 200;
+  font-style: italic;
+}
+
+.container.small {
+  font-size: 2rem;
+}
+
+.container span {
+  font-family: "Monaco";
+  font-size: inherit;
+  font-style: normal;
+  color: var(--black);
+}
