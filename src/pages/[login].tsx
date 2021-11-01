@@ -10,6 +10,7 @@ import {
   RepositoryItemProps,
   REPOSITORY_ITEM_FRAGMENT,
 } from "../components/RepositoryItem";
+import { Icon } from "../components/Icon";
 
 const GET_USER = gql`
   query UserQuery($login: String!) {
@@ -88,16 +89,33 @@ function User() {
 
     info = (
       <div>
-        <img src={user.avatarUrl} alt="User avatar" />
+        <img className={styles.avatar} src={user.avatarUrl} alt="User avatar" />
         <p className={styles.name}>{user.name}</p>
         <p className={styles.login}>{router.query.login}</p>
         {!!user.organizations.nodes.length && (
-          <p>{user.organizations.nodes[0].name}</p>
+          <p>
+            <Icon name="organization" />
+            {user.organizations.nodes[0].name}
+          </p>
         )}
-        {!!user.location && <p>{user.location}</p>}
-        <p>{user.starredRepositories.totalCount}</p>
-        <p>{user.repositories.totalCount}</p>
-        <p>{user.followers.totalCount}</p>
+        {!!user.location && (
+          <p>
+            <Icon name="location" />
+            {user.location}
+          </p>
+        )}
+        <p>
+          <Icon name="star" />
+          {user.starredRepositories.totalCount}
+        </p>
+        <p>
+          <Icon name="repositorie" />
+          {user.repositories.totalCount}
+        </p>
+        <p>
+          <Icon name="followers" />
+          {user.followers.totalCount}
+        </p>
       </div>
     );
   }

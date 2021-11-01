@@ -10,4 +10,9 @@
 
 .stars {
   margin-top: 0.5rem;
+  display: flex;
+}
+
+.stars img {
+  margin-right: 0.35rem;
 }

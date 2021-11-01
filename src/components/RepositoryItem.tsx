@@ -1,6 +1,7 @@
 import { gql } from "@apollo/client";
 
 import styles from "../styles/components/RepositoryItem.module.css";
+import { Icon } from "./Icon";
 
 export interface RepositoryItemProps {
   name: string;
@@ -26,7 +27,10 @@ export function RepositoryItem(props: RepositoryItemProps) {
       <a href={url} target="_blank" rel="noreferrer noopener">
         <p className={styles.name}>{name}</p>
         {description && <p className={styles.description}>{description}</p>}
-        <p className={styles.stars}>{stargazerCount}</p>
+        <p className={styles.stars}>
+          <Icon name="star" />
+          {stargazerCount}
+        </p>
       </a>
     </div>
   );

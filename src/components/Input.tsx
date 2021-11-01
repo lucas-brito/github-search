@@ -1,6 +1,7 @@
 // import { Icon } from './Icon'
 
 import styles from "../styles/components/Input.module.css";
+import { Icon } from "./Icon";
 
 export interface InputProps {
   name: string;
@@ -15,7 +16,9 @@ export function Input(props: InputProps) {
   return (
     <div className={styles.container}>
       <input id={name} type="text" className={errorStyle} {...rest} />
-      <button type="submit">SEARCH</button>
+      <button type="submit">
+        <Icon name="search" size="large" />
+      </button>
     </div>
   );
 }

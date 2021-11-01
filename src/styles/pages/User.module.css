@@ -34,7 +34,7 @@
   font-size: 2rem;
 }
 
-.info img {
+.info .avatar {
   width: 100%;
   max-width: 280px;
   border-radius: 2px;
@@ -45,6 +45,11 @@
 
 .info p {
   margin-bottom: 0.75rem;
+  display: flex;
+}
+
+.info p img {
+  margin-right: 0.35rem;
 }
 
 .info .name {
