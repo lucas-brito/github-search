@@ -6,7 +6,7 @@ import { Icon } from "./Icon";
 export interface InputProps {
   name: string;
   error: boolean;
-  [key: string]: any;
+  defaultValue?: string;
 }
 
 export function Input(props: InputProps) {

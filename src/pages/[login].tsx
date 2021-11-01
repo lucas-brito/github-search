@@ -81,7 +81,6 @@ function User() {
     );
   }
 
-  console.log(loading, error, data);
   let info;
 
   if (data) {
