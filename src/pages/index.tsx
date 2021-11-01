@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import { useRouter } from "next/dist/client/router";
 
 import { Brand } from "../components/Brand";
@@ -28,12 +27,6 @@ function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Github Search</title>
-        <meta name="description" content="Search for github users profiles" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <Brand />
         <form className="form" onSubmit={handleSumit}>
