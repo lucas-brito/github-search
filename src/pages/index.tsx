@@ -5,7 +5,7 @@ import { useRouter } from "next/dist/client/router";
 import { Brand } from "../components/Brand";
 import { Input } from "../components/Input";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/pages/Home.module.css";
 
 function Home() {
   const router = useRouter();

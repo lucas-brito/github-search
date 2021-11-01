@@ -9,7 +9,7 @@ export function Brand(props: BrandProps) {
 
   return (
     <div className={`${styles.container} ${size ? styles[size] : ""}`}>
-      <span>Github</span> Search
+      <span>Github</span>Search
     </div>
   );
 }

@@ -28,7 +28,7 @@ body,
 input,
 textarea,
 button {
-  font: 400 1rem "Raleway", "Roboto", sans-serif;
+  font: 300 1rem "Raleway", "Roboto", sans-serif;
   color: var(--gray);
 }
 

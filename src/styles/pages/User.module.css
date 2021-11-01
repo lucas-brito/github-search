@@ -1,0 +1,67 @@
+.container {
+  padding: 1.75rem 1.25rem;
+}
+
+.container header {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 3fr;
+  align-items: center;
+}
+
+.container main {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 3fr;
+
+  margin-top: 2rem;
+}
+
+.container main.simple {
+  grid-template-columns: 100%;
+}
+
+.container main.simple .info,
+.container main.simple .empty {
+  display: none;
+}
+
+.container main.simple .content {
+  text-align: center;
+  margin: 6rem;
+}
+
+.container main.simple .content .error {
+  color: var(--purple);
+  font-size: 2rem;
+}
+
+.info img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 40%);
+
+  margin-bottom: 0.5rem;
+}
+
+.info p {
+  margin-bottom: 0.75rem;
+}
+
+.info .name {
+  font-size: 1.75rem;
+  color: var(--black);
+
+  margin-bottom: 0.3rem;
+}
+
+.info .login {
+  margin-bottom: 1.5rem;
+}
+
+.container main .content div {
+  margin-bottom: 1.5rem;
+}
+
+.container main .content div:last-child {
+  margin-bottom: 0;
+}

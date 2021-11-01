@@ -18,7 +18,7 @@ const createApolloClient = () => {
     ssrMode: typeof window === "undefined",
     uri: "https://api.github.com/graphql",
     headers: {
-      Authorization: "Bearer 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",
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_GIHTUB_TOKEN}`,
     },
     cache: new InMemoryCache(),
   });

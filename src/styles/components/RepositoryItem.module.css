@@ -1,0 +1,13 @@
+.name {
+  font-weight: normal;
+  font-size: 1.75rem;
+  color: var(--purple);
+}
+
+.description {
+  color: var(--black);
+}
+
+.stars {
+  margin-top: 0.5rem;
+}
